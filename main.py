@@ -44,7 +44,7 @@ def convertion():
         entry_box1.insert(0, 1)    
     variable1 = currency_name(selected_fr_country.get())
     variable2 = currency_name(selected_to_country.get())
-    ulr = 'https://v6.exchangerate-api.com/v6/6200485f90b6622375cf0d7e/latest/' + variable1
+    ulr = 'https://v6.exchangerate-api.com/v6/ADD_YOUR_API_KEY_HERE/latest/' + variable1
     r = requests.get(ulr)
     data = json.loads(r.content)
     result = data['conversion_rates'][variable2]
